@@ -1,0 +1,256 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.top-header{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-auto-rows: auto;
+    font-family: 'Roboto', sans-serif;
+    color: #0E0E0E;
+    font-size: 0.846rem;
+    font-weight: bold;
+    padding-top: 1em;
+    padding-left: 1em;    
+}
+
+img {
+    grid-row: 1;
+    grid-column: 1;
+    width: 1.43em;
+}
+
+
+.top-header p{
+    grid-row: 1;
+    grid-column: 1;
+    margin-left: 1.7em;
+    width: 10.10em;      
+    margin-top: 0;
+    margin-right: 4em;
+}
+
+a, .second-page {
+    width: 3.625em;
+    color: #090909;
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.second-page{
+    width: 6.5em;
+}
+
+.head-line {
+    font-family: 'Source Sans 3', sans-serif;   
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, auto);
+    background-image: url("article-image-hero.png");
+    width: 100%;
+    height: 18.12em;
+    background-size: cover;
+    background-position: center;
+    gap: 0.75em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+}
+
+.head-line h1 {
+    margin: 0;
+    grid-row: 2/3;
+    grid-column: 1/3;
+    color: #FFFFFF;
+    font-size: 2rem;
+}
+
+.date {
+    margin-top: auto;
+    margin-bottom: 0;
+    grid-row: 1;
+    color: #FFFFFF;
+    font-size: 0.75rem;
+}
+ .content {
+    width: 90%;
+    margin: 0;
+    grid-row: 3;
+    grid-column: 1/4;
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+.blogs {
+    padding-left: 1em;
+    padding-right: 1em;  
+    margin-top: 2em;
+}
+.blogs p {
+    font-size: 0.88rem;
+    color: #000000;
+    margin: 0.75em 0;
+}
+.blogs h2 {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.5em 0;
+}
+.blog-content {
+    font-size: 1rem;
+    color: #505050;
+    line-height: 1.5em;
+    margin: 0;
+}
+
+.blogs img {
+    
+    width: 100%;
+    margin: 0;
+}
+
+footer {
+    margin-top: 2em;
+    font-family: 'Source Sans 3', sans-serif;
+    background-color:#202020;
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+footer h3 {
+    color: #ECECEC;
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+footer p {
+    color: #D7D7D7 ;
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+/* Styling article HTML */
+
+.article-content {
+    margin-top: 4em;
+    padding-left: 2em;
+    padding-right: 0;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+
+.article-content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.article-content img {
+    width: 90%;
+    border-radius: 3px;
+    
+}
+.blog-content-p {
+    font-size: 1rem;
+    color: #151515;
+    font-family: 'Source Sans 3', sans-serif;
+    line-height: 1.2em;
+    width: 90%;
+    margin-bottom: 1em ;
+}
+
+.article-content h2 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.recent-posts {
+    margin-top: 3em;
+    text-align: center;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 1rem;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* about me */
+.avatar{
+    width: 8em;
+    height: 8em;
+    border-radius:100%;  
+}
+
+.about-me-content {
+    margin-top: 2em;
+    padding-left: 2em;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.about-me-content h1 {
+    font-size: 2.177rem;
+    color: #151515;
+    width: 80%;
+    font-weight: bold;
+}
+ 
+
+
+@media (min-width: 700px) {
+    .all-blogs{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 1fr;
+        grid-template-areas: 
+    "content content content"
+    ;
+    }
+    .article-content img {
+        width: 94%;
+    }
+    .blog-content-p {
+        padding-left: 2em;
+        width: 80%;
+    }    
+    .article-content h2 {
+        padding-left: 2em ;
+    }
+    /* article HTML */
+    .article-content h1 {
+        padding-left: 1em;
+    }
+    .article-content-date {
+        padding-left: 2em;
+    }
+    .contianer{
+        background-color: #FAFAFA;
+    }
+    .top-header{
+        background-color: #FFFFFF;
+    }
+    .about-me-content {
+        display: grid;
+        grid-template-rows: 6em;
+        grid-template-columns: 9em 56em;
+        gap: 0;
+        margin: 0;
+        padding-top:5em ;
+    }
+    .about-me-content h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 2.25rem;
+    }
+    .about-me-content p {
+        grid-column: 2;
+        padding: 0;
+        margin: 0;
+    }
+   
+}
+
